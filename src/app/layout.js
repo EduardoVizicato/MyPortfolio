@@ -1,8 +1,8 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import {Geist, Geist_Mono, Averia_Sans_Libre, Roboto, Open_Sans} from "next/font/google";
 import "./globals.css";
 
-const arialSansLibre = Averia_Sans_Libre({
-  variable: "--font-arial-sans-libre",
+const averiaSansLibre = Averia_Sans_Libre({
+  variable: "--font-averia-sans-libre",
   subsets: ["latin"],
   weight: "300"
 });
@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`${roboto.variable} ${openSans.variable} ${averiaSansLibre.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
